@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <!-- Pure White Background -->
+    <rect width="400" height="400" fill="#FFFFFF" />
+    
+    <!-- Perfectly Centered Logo Icon (Flat Design, No Gradients/Glows) -->
+    <g id="logo-icon" transform="translate(245, 195) scale(1.6)">
+        <!-- Main Diagonal - Top-Left Segment (Solid Trans Light Blue) -->
+        <path d="M -60,-60 L -20,-20" stroke="#55CDFC" stroke-width="22" stroke-linecap="round" />
+        
+        <!-- Main Diagonal - Bottom-Right Segment (Solid Trans Light Blue) -->
+        <path d="M 20,20 L 60,60" stroke="#55CDFC" stroke-width="22" stroke-linecap="round" />
+
+        <!-- The Dynamic "Tail" (Solid Trans Pink) -->
+        <path d="M -120,0 C -120,55 -75,75 -40,40 L 60,-60" stroke="#F7A8B8" stroke-width="22" stroke-linecap="round" fill="none" />
+        
+        <!-- Data Tail Particles (Alternating Trans Colors for clean contrast on white) -->
+        <circle cx="-145" cy="-15" r="5" fill="#55CDFC" />
+        <circle cx="-140" cy="15" r="7" fill="#F7A8B8" />
+        <circle cx="-125" cy="45" r="4" fill="#55CDFC" />
+    </g>
+</svg>

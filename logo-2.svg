@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+    <defs>
+        <!-- Gradients for the Logo Mark -->
+        <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00F2FE" />
+            <stop offset="100%" stop-color="#4FACFE" />
+        </linearGradient>
+        
+        <linearGradient id="tail-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#F355DA" />
+            <stop offset="50%" stop-color="#7000FF" />
+            <stop offset="100%" stop-color="#00E5FF" />
+        </linearGradient>
+
+        <linearGradient id="text-x-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00E5FF" />
+            <stop offset="100%" stop-color="#7000FF" />
+        </linearGradient>
+
+        <!-- Glow Filter for AI/Cloud Tech feel -->
+        <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="10" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        
+        <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+        </filter>
+    </defs>
+
+    <!-- Deep Tech Premium Background -->
+    <rect width="800" height="400" rx="24" fill="#070B14" />
+    
+    <!-- Decorative Subtle Background Grid/Elements (Data & Cloud Matrix) -->
+    <g opacity="0.06">
+        <circle cx="200" cy="200" r="140" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 8"/>
+        <circle cx="200" cy="200" r="90" fill="none" stroke="#FFFFFF" stroke-width="1" />
+        <line x1="40" y1="200" x2="360" y2="200" stroke="#FFFFFF" stroke-width="1"/>
+        <line x1="200" y1="40" x2="200" y2="360" stroke="#FFFFFF" stroke-width="1"/>
+    </g>
+
+    <!-- LOGO MARK (ICON) -->
+    <g id="logo-icon" filter="url(#soft-shadow)">
+        <!-- Background Ambient Glow at the center intersection to feel like an AI Core -->
+        <circle cx="200" cy="200" r="35" fill="#7000FF" opacity="0.3" filter="url(#glow)"/>
+
+        <!-- Main Diagonal (Stability/Cloud Infrastructure) - Top-Left Segment -->
+        <path d="M 140,140 L 180,180" stroke="url(#primary-grad)" stroke-width="24" stroke-linecap="round" />
+        
+        <!-- Main Diagonal (Stability/Cloud Infrastructure) - Bottom-Right Segment -->
+        <path d="M 220,220 L 260,260" stroke="url(#primary-grad)" stroke-width="24" stroke-linecap="round" />
+
+        <!-- The Dynamic "Tail" (Data Stream & AI Processing) -->
+        <!-- Seamlessly curves from the left (tail), loops, and shoots through the center to top-right -->
+        <path d="M 80,200 C 80,255 125,275 160,240 L 260,140" stroke="url(#tail-grad)" stroke-width="24" stroke-linecap="round" fill="none" />
+        
+        <!-- Data Tail Particles (The trailing data packets) -->
+        <circle cx="55" cy="185" r="4" fill="#F355DA" opacity="0.4" />
+        <circle cx="60" cy="215" r="6" fill="#7000FF" opacity="0.7" />
+        <circle cx="75" cy="245" r="3.5" fill="#00E5FF" opacity="0.6" />
+    </g>
+
+    <!-- TYPOGRAPHY (TEXT) -->
+    <g id="logo-text">
+        <!-- Main Brand Name -->
+        <text x="340" y="215" font-family="'Inter', 'Montserrat', 'Segoe UI', -apple-system, sans-serif" font-size="88" font-weight="800" letter-spacing="-2">
+            <tspan fill="#FFFFFF">Tail</tspan>
+            <tspan fill="url(#text-x-grad)" font-weight="900">X</tspan>
+        </text>
+        
+        <!-- Subtitle / Platform Tagline -->
+        <text x="345" y="258" font-family="'Inter', 'Segoe UI', -apple-system, sans-serif" font-size="14" font-weight="600" fill="#5F6E88" letter-spacing="6.5">
+            CLOUD • DATA • AI PLATFORM
+        </text>
+    </g>
+</svg>
